@@ -1,0 +1,6 @@
+@EliteHire360_HostAddress = http://localhost:5288
+
+GET {{EliteHire360_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
