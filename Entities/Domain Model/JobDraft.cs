@@ -9,6 +9,7 @@ namespace Entities
     {
         [Key]
         public int Id { get; set; }
+
         [ForeignKey("Job")]
         public int JobId { get; set; }
         public string? JobTitle { get; set; }

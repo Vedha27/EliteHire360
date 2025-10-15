@@ -33,11 +33,7 @@ namespace Entities
         public DateTime? UpdatedAt { get; set; }
 
         public virtual UserRoleMapping? UserRoleMapping { get; set; }
-        public virtual Candidate? CandidateProfile { get; set; }
-        public virtual ICollection<Message> SentMessages { get; set; } = new List<Message>();
-        public virtual ICollection<Message> ReceivedMessages { get; set; } = new List<Message>();
-        public virtual ICollection<Application> Applications { get; set; } = new List<Application>();
-        public virtual ICollection<Job> Jobs { get; set; } = new List<Job>();
-        public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();
+        public virtual Candidate? Candidate { get; set; }
+        public virtual Organisation? Organisation { get; set; }
     }
 }

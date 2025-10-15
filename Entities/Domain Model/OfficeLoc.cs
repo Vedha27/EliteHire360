@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Entities.JsonModels;
+using System.Collections.Generic;
 
 namespace Entities
 {
@@ -26,5 +27,8 @@ namespace Entities
 
         public virtual Organisation Organisation { get; set; } = null!;
         public virtual User User { get; set; } = null!;
+
+        // Navigation property: Jobs in this Office Location
+        public virtual ICollection<Job> Jobs { get; set; } = new List<Job>();
     }
 }

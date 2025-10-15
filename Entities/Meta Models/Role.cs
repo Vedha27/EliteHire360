@@ -7,7 +7,7 @@ namespace Entities.MetaModels
         [Key]
         public int Id { get; set; }
         [MaxLength(20)]
-        public string Name { get; set; } = null!;
+        public string RoleName { get; set; } = null!;
         public int CreatedBy { get; set; }
         public DateTime CreatedAt { get; set; }
     }

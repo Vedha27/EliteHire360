@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Entities.JsonModels;
 using System.Collections.Generic;
+using Entities.MetaModels;
 
 namespace Entities
 {
@@ -17,8 +18,10 @@ namespace Entities
         public InterviewProcess? InterviewProcess { get; set; }
         [ForeignKey("Department")]
         public int DepartmentId { get; set; }
+
         [ForeignKey("OfficeLoc")]
         public int LocationId { get; set; }
+
         [ForeignKey("EmploymentType")]
         public int EmpType { get; set; }
         [ForeignKey("Organisation")]

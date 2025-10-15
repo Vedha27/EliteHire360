@@ -16,6 +16,7 @@ namespace Entities
         public string LastName { get; set; } = null!;
         [MaxLength(55)]
         public string Email { get; set; } = null!;
+
         [ForeignKey("SubRole")]
         public int SubRoleId { get; set; }
         [ForeignKey("Department")]

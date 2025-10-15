@@ -1,3 +1,4 @@
+using Entities.MetaModels;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -12,6 +13,7 @@ namespace Entities
         public int UserId { get; set; }
         [ForeignKey("Role")]
         public int RoleId { get; set; }
+
         [ForeignKey("SubRole")]
         public int SubroleId { get; set; }
         public int CreatedBy { get; set; }
