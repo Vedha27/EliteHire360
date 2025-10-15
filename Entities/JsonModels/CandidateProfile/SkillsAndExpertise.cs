@@ -1,6 +1,6 @@
-namespace Entities.JsonModels
+namespace Entities.JsonModels.CandidateProfile
 {
-    public class SkillsExpertise
+    public class SkillsAndExpertise
     {
         public string? CategoryName { get; set; }
         public List<SkillDetails>? SkillDetails { get; set; }

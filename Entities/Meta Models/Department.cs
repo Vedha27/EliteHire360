@@ -1,4 +1,6 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace Entities.MetaModels
 {
@@ -10,5 +12,12 @@ namespace Entities.MetaModels
         public string DeptName { get; set; } = null!;
         public int CreatedBy { get; set; }
         public DateTime CreatedAt { get; set; }
+
+        // Navigation property: CreatedBy User
+        [ForeignKey("CreatedBy")]
+        public virtual User? CreatedByUser { get; set; }
+
+        // Navigation property: Jobs in this Department
+        public virtual ICollection<Job> Jobs { get; set; } = new List<Job>();
     }
 }

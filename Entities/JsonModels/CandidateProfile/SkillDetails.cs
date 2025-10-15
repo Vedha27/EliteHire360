@@ -1,4 +1,4 @@
-namespace Entities.JsonModels
+namespace Entities.JsonModels.CandidateProfile
 {
     public class SkillDetails
     {

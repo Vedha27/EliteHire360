@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
 using Entities.JsonModels;
+using Entities.JsonModels.Organization;
 
 namespace Entities
 {

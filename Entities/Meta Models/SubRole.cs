@@ -5,10 +5,10 @@ namespace Entities.MetaModels
     public class SubRole
     {
         [Key]
-        public int Id { get; set; }
+        public int SubRoleId { get; set; }
         public int PermissionId { get; set; }
         [MaxLength(30)]
-        public string RoleName { get; set; } = null!;
+        public string SubRoleName { get; set; } = null!;
         [MaxLength(256)]
         public string RoleDesc { get; set; } = null!;
         public DateTime CreatedOn { get; set; }

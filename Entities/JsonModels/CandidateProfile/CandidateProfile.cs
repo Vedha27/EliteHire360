@@ -1,6 +1,6 @@
-namespace Entities.JsonModels
+namespace Entities.JsonModels.CandidateProfile
 {
-    public class MyProfile
+    public class CandidateProfile
     {
         public About? About { get; set; }
         public List<Experience>? Experience { get; set; }

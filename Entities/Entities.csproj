@@ -11,4 +11,12 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="JsonModels\CompanyProfile\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Meta Models\StatusCategory.cs" />
+  </ItemGroup>
+
 </Project>

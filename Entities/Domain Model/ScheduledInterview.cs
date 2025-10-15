@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace Entities
 {
@@ -32,5 +33,8 @@ namespace Entities
         public int? UpdatedBy { get; set; }
 
         public virtual Application Application { get; set; } = null!;
+
+        // Navigation property for ScheduledInterviewHistory
+        public virtual ICollection<ScheduledInterviewHistory> ScheduledInterviewHistories { get; set; } = new List<ScheduledInterviewHistory>();
     }
 }
