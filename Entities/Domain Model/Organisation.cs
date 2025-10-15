@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
 using Entities.JsonModels;
 using Entities.JsonModels.Organization;
+using System.Text.Json;
 
 namespace Entities
 {
@@ -17,8 +18,29 @@ namespace Entities
         public string Name { get; set; } = null!;
         [MaxLength(55)]
         public string? Insudstry { get; set; }
+
+        [NotMapped]
         public CompanyOverview? Overview { get; set; }
+        [Column("overview", TypeName = "jsonb")]
+        public string? OverviewJson
+        {
+            get => Overview == null ? null : JsonSerializer.Serialize(Overview);
+            set => Overview = string.IsNullOrWhiteSpace(value)
+                ? new CompanyOverview()
+                : JsonSerializer.Deserialize<CompanyOverview>(value);
+        }
+
+        [NotMapped]
         public CompanyCulture? Culture { get; set; }
+        [Column("culture", TypeName = "jsonb")]
+        public string? CultureJson
+        {
+            get => Culture == null ? null : JsonSerializer.Serialize(Culture);
+            set => Culture = string.IsNullOrWhiteSpace(value)
+                ? new CompanyCulture()
+                : JsonSerializer.Deserialize<CompanyCulture>(value);
+        }
+
         [MaxLength(55)]
         public string? Benefit { get; set; }
         [ForeignKey("OfficeLoc")]

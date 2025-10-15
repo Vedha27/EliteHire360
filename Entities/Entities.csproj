@@ -7,12 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EntityFramework" Version="6.5.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
+    <Compile Remove="JsonModels\CompanyProfile\**" />
+    <EmbeddedResource Remove="JsonModels\CompanyProfile\**" />
+    <None Remove="JsonModels\CompanyProfile\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="JsonModels\CompanyProfile\" />
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
   </ItemGroup>
 
   <ItemGroup>

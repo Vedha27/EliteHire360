@@ -2,6 +2,8 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
+using Entities.JsonModels.Job;
+using System.Text.Json;
 
 namespace Entities
 {
@@ -23,8 +25,16 @@ namespace Entities
         public int Duration { get; set; }
         [MaxLength(40)]
         public string Status { get; set; } = null!;
-        [MaxLength(40)]
-        public string? FeedBack { get; set; }
+        [NotMapped]
+        public InterviewFeedback? InterviewFeedback { get; set; }
+        [Column("interviewFeedback", TypeName = "json")]
+        public string? InterviewFeedbackJson
+        {
+            get => InterviewFeedback == null ? null : JsonSerializer.Serialize(InterviewFeedback);
+            set => InterviewFeedback = string.IsNullOrWhiteSpace(value)
+                ? new InterviewFeedback()
+                : JsonSerializer.Deserialize<InterviewFeedback>(value);
+        }
         [MaxLength(55)]
         public string? Location { get; set; }
         public DateTime CreatedAt { get; set; }

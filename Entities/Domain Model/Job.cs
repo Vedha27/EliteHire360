@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 using Entities.JsonModels;
 using System.Collections.Generic;
 using Entities.MetaModels;
+using System.Text.Json;
+using Entities.JsonModels.Job;
 
 namespace Entities
 {
@@ -15,13 +17,22 @@ namespace Entities
         public Guid UniqueKey { get; set; }
         [MaxLength(30)]
         public string JobTitle { get; set; } = null!;
-        public InterviewProcess? InterviewProcess { get; set; }
+
+        [NotMapped]
+        public List<InterviewRound>? InterviewProcess { get; set; } = new List<InterviewRound>();
+        [Column("interviewProcess", TypeName = "jsonb")]
+        public string? InterviewProcessJson
+        {
+            get => InterviewProcess == null ? null : JsonSerializer.Serialize(InterviewProcess);
+            set => InterviewProcess = string.IsNullOrWhiteSpace(value)
+                ? new List<InterviewRound>()
+                : JsonSerializer.Deserialize<List<InterviewRound>>(value);
+        }
+
         [ForeignKey("Department")]
         public int DepartmentId { get; set; }
-
         [ForeignKey("OfficeLoc")]
         public int LocationId { get; set; }
-
         [ForeignKey("EmploymentType")]
         public int EmpType { get; set; }
         [ForeignKey("Organisation")]
@@ -30,7 +41,18 @@ namespace Entities
         public int WorkMode { get; set; }
         public long? MinSalary { get; set; }
         public long? MaxSalary { get; set; }
+
+        [NotMapped]
         public JobDescription? JobDesc { get; set; }
+        [Column("jobDesc", TypeName = "json")]
+        public string? JobDescJson
+        {
+            get => JobDesc == null ? null : JsonSerializer.Serialize(JobDesc);
+            set => JobDesc = string.IsNullOrWhiteSpace(value)
+                ? new JobDescription()
+                : JsonSerializer.Deserialize<JobDescription>(value);
+        }
+
         [ForeignKey("Status")]
         public int JobStatusId { get; set; }
         [ForeignKey("ExperienceLevel")]

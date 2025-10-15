@@ -1,4 +1,4 @@
-namespace Entities.JsonModels
+namespace Entities.JsonModels.Job
 {
     public class InterviewRound
     {

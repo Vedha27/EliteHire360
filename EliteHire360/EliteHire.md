@@ -77,7 +77,7 @@
 - **id** → `int` (PK)  
 - **uniqueKey** → `guid`  
 - **jobTitle** → `varchar(30)`  
-- **interviewProcess**  → `jsonb`
+- **interviewProcess**  → `[]` `jsonb`
 - **departmentId** → `int` (FK → Department.id)  
 - **locationId** → `int` (FK → OfficeLoc.id)  
 - **empType** → `int` (FK → EmploymentType.id)  
@@ -208,7 +208,7 @@
 - **startTime** → `datetime`
 - **duration** → `int`  
 - **status** → `varchar(40)`  
-- **feedBack** → `varchar(40)`  
+- **feedBack** → ``  
 - **location** → `varchar(55)`  
 - **createdAt** → `datetime`  
 - **updatedAt** → `datetime`  
@@ -647,22 +647,22 @@
 **Section:** `InterviewFeedback`
 
 - **PerformanceRating**
-  - **TechnicalSkills** → `""`  
-  - **Communication** → `""`  
-  - **ExperienceLevel** → `""`  
-  - **CulturalFit** → `""`  
-  - **OverallAssessment** → `""`  
+  - **TechnicalSkills** → `int`
+  - **Communication** → `int`
+  - **ExperienceLevel** → `int`
+  - **CultutralFit** → `int`
+  - **OverallAssessment** → `int`
 
 - **DetailedFeedback**
-  - **GeneralComments** → `[]`  
-  - **KeyStrengths** → `[]`  
-  - **AreasForImprovement** → `[]`  
-  - **AdditionalInterviewerNotes** → `[]`  
+  - **GeneralComments** → `string`
+  - **KeyStrengths** → `string`
+  - **AreasForImprovement** → `string`
+  - **AddtionalInterviewerNotes** → `string`
 
 - **Recommendation**
-  - **HiringRecommendation** → `""`  
-  - **RecommendedNextSteps** → `[]`  
-
+  - **HiringRecommendation** → `string`
+  - **ReommendedNextSteps** → `string`
+ 
 ---
 # Screening Json 
 ---
@@ -675,8 +675,8 @@
 ---
 # InterviewProcess Json 
 ---
- - **InterviewProcess**  →
-      - **InterviewRounds**  →
+
+   - **InterviewRounds**  →
          - **RoundTittle**:`""`,
          - **InterviewType**:`""`,
          - **Description**:`""`,
@@ -735,6 +735,10 @@ Job Status
     Review --> Rejected
 
 ```
+
+
+
+
 
 
 
