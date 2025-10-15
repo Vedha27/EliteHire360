@@ -37,7 +37,7 @@ namespace Entities.MyDbContext
         public DbSet<ProjectCategory> ProjectCategories { get; set; }
         public DbSet<ProjectStatus> ProjectStatuses { get; set; }
         public DbSet<Status> Statuses { get; set; }
-        public DbSet<StatusCategories> StatusCategories { get; set; }
+        public DbSet<StatusCategory> StatusCategory { get; set; }
         public DbSet<OfficeType> OfficeTypes { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<InterviewFormat> InterviewFormats { get; set; }

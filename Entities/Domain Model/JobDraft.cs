@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Entities.JsonModels;
 using System.Text.Json;
+using Entities.JsonModels.Job;
 
 namespace Entities
 {
@@ -16,7 +17,7 @@ namespace Entities
         public int? DepartmentId { get; set; }
 
         [NotMapped]
-        public List<InterviewRound>? InterviewProcess { get; set; } = new List<InterviewRound>();
+        public List<InterviewRound  >? InterviewProcess { get; set; } = new List<InterviewRound>();
         [Column("interviewProcess", TypeName = "jsonb")]
         public string? InterviewProcessJson
         {
