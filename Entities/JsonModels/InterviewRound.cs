@@ -8,5 +8,6 @@ namespace Entities.JsonModels
         public string? Duration { get; set; }
         public string? Interviewers { get; set; }
         public string? Instructions { get; set; }
+
     }
 }
