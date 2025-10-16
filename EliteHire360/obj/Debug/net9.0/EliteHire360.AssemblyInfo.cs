@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EliteHire360")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10db1ed2272e1be88fae5b2660e74f8823119ff9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a9c663e821cfb68ffe84de48cc8a53810bede31")]
 [assembly: System.Reflection.AssemblyProductAttribute("EliteHire360")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EliteHire360")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
