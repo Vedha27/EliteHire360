@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+oeg/KIjY7Y=",
+  "dgSpecHash": "feEr88YfA64=",
   "success": true,
-  "projectFilePath": "D:\\ASP.Net CORE WEB API\\EliteHire360\\EliteHire360\\EliteHire360.csproj",
+  "projectFilePath": "D:\\EliteHire\\EliteHireMainModule\\EliteHire360-1\\EliteHire360\\EliteHire360.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vedha\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
     "C:\\Users\\vedha\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.10\\microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",

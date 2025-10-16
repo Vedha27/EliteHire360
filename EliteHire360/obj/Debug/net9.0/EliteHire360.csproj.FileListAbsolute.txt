@@ -68,3 +68,15 @@ D:\ASP.Net CORE WEB API\EliteHire360\EliteHire360\obj\Debug\net9.0\refint\EliteH
 D:\ASP.Net CORE WEB API\EliteHire360\EliteHire360\obj\Debug\net9.0\EliteHire360.pdb
 D:\ASP.Net CORE WEB API\EliteHire360\EliteHire360\obj\Debug\net9.0\EliteHire360.genruntimeconfig.cache
 D:\ASP.Net CORE WEB API\EliteHire360\EliteHire360\obj\Debug\net9.0\ref\EliteHire360.dll
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\EliteHire360.csproj.AssemblyReference.cache
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\EliteHire360.GeneratedMSBuildEditorConfig.editorconfig
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\EliteHire360.AssemblyInfoInputs.cache
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\EliteHire360.AssemblyInfo.cs
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\EliteHire360.csproj.CoreCompileInputs.cache
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\EliteHire360.MvcApplicationPartsAssemblyInfo.cs
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\EliteHire360.MvcApplicationPartsAssemblyInfo.cache
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\EliteHire360.sourcelink.json
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\EliteHire360.dll
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\refint\EliteHire360.dll
+D:\EliteHire\EliteHireMainModule\EliteHire360-1\EliteHire360\obj\Debug\net9.0\EliteHire360.pdb
