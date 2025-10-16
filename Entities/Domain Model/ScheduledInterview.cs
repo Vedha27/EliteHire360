@@ -24,7 +24,7 @@ namespace Entities
         public DateTime StartTime { get; set; }
         public int Duration { get; set; }
         [MaxLength(40)]
-        public string Status { get; set; } = null!;
+        public string Status { get; set; } = null!; 
         [NotMapped]
         public InterviewFeedback? InterviewFeedback { get; set; }
         [Column("interviewFeedback", TypeName = "json")]
