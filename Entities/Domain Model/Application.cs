@@ -29,7 +29,6 @@ namespace Entities
 
         public int? IsOfferAccepted { get; set; }
 
-        public PersonInformation? PersonInfo { get; set; }
 
         [NotMapped]
         public ExperienceAndBackground? ExperienceAndBackground { get; set; }
